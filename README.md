@@ -1,6 +1,6 @@
 # AI-bot-with-Python
 
-This is a python project to develop an Artifical Bot which can interact with humans.
+This is a python project to develop an Artificial Bot which can interact with humans.
 
 ## Source Code
 
@@ -9,7 +9,7 @@ This is a python project to develop an Artifical Bot which can interact with hum
 
 ## Application Description
 
-This is a python project to develop an Artifical Bot which can interact with humans. It get triggered when somebody calls its name 'ANNA' and can perform several task on a running machine such as:
+This is a python project to develop an Artificial Bot which can interact with humans. It get triggered when somebody calls its name 'ANNA' and can perform several task on a running machine such as:
 
 - Telling information about a person, place or thing
 - Opening a website or application(eg. chrome or android studio)
