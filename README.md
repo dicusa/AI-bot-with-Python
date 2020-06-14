@@ -22,7 +22,7 @@ It uses different libraries to perform tasks at several levels.
   - It waits for audio input from microphone of a device with the help of speech-recognition library.
   - The audio input then converted into text with the help of speech-to-text (STT) recognition library.
   - The text output obtained by the STT recognition library is checked to contain a particular phrase or a word to triggr any relevant action.
-  - When pharse or word is matched then the equivalent function code is called to perform the task.
+  - When phrase or word is matched then the equivalent function code is called to perform the task.
 
 ## Libraries Used
 
