@@ -1,0 +1,9 @@
+pyttsx3
+SpeechRecognition
+pyaudio
+playsound
+wikipedia
+python-weather
+newsapi-python
+openai
+schedule

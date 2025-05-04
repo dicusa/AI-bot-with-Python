@@ -1,37 +1,134 @@
-# AI-bot-with-Python
+# 🤖 Anna – Modular AI Voice Assistant
 
-This is a python project to develop an Artificial Bot which can interact with humans.
+Anna is a modular, voice-activated AI assistant for your computer. Triggered by her name (“Anna”), she can answer questions, open apps and websites, fetch information, send emails, check the weather, read the news, set reminders, and even chat with you using GPT technology.
 
-## Source Code
+---
 
-- Source code contains the explanation of each and every line of a program.
-  [Jump to source code](AI-assistant.py)
+## ✨ Features
 
-## Application Description
+- **Wake Word Activation**: Just say “Anna” to get her attention.
+- **Conversational AI**: Powered by OpenAI GPT for natural conversations.
+- **Information Lookup**: Ask about people, places, or things (Wikipedia integration).
+- **Web & App Automation**: Open Chrome, Android Studio, or any website by voice.
+- **Google Search**: Initiate a search with your voice.
+- **Time Reporting**: Ask for the current time.
+- **Weather Updates**: Get current weather for any city.
+- **News Headlines**: Hear the latest news on any topic.
+- **Email Sending**: Send emails by dictating recipient, subject, and body.
+- **Reminders**: Set voice reminders for any task.
+- **Fun & Predefined Responses**: Easter eggs, jokes, and witty answers.
+- **Customizable & Extensible**: Modular codebase for easy feature additions.
 
-This is a python project to develop an Artificial Bot which can interact with humans. It get triggered when somebody calls its name 'ANNA' and can perform several task on a running machine such as:
+---
 
-- Telling information about a person, place or thing
-- Opening a website or application(eg. chrome or android studio)
-- Telling current time
-- Intiating a google search and many more stuff
+## 🏗️ Project Structure
 
-It uses different libraries to perform tasks at several levels.
+AI-assistant/
+│
+├── main.py
+├── config.py
+├── requirements.txt
+├── assistant/
+│ ├── init.py
+│ ├── speech.py
+│ ├── wakeword.py
+│ ├── nlu.py
+│ ├── commands.py
+│ ├── utils.py
+│ ├── parsers.py
+│ ├── web.py
+│ └── plugins/
+│ ├── init.py
+│ ├── weather.py
+│ ├── news.py
+│ ├── emailer.py
+│ └── reminders.py
+└── assets/
+└── beatbox.wav
 
-- Workflow of program:
-  - It waits for audio input from microphone of a device with the help of speech-recognition library.
-  - The audio input then converted into text with the help of speech-to-text (STT) recognition library.
-  - The text output obtained by the STT recognition library is checked to contain a particular phrase or a word to triggr any relevant action.
-  - When phrase or word is matched then the equivalent function code is called to perform the task.
 
-## Libraries Used
+---
 
-1. [pyttsx3](https://pypi.org/project/pyttsx3/) :- Text to Speech (TTS) library (pip install pyttsx3)
-2. [speech_recognition](https://pypi.org/project/SpeechRecognition/) :- Library for performing speech recognition (pip install SpeechRecognition)
-3. [pyaudio](https://pypi.org/project/PyAudio/) :- Cross-platform audio input/output stream library (pip install PyAudio)
-4. [playsound](https://pypi.org/project/playsound/) :- library for playing sounds (pip install playsound)
-5. [wikipedia](https://pypi.org/project/wikipedia/) :- Wikipedia API for Python (pip install wikipedia)
-6. [datetime](https://docs.python.org/3/library/datetime.html) :- Library for manipulating dates and times
-7. [webbrowser](https://docs.python.org/3/library/webbrowser.html) :- Library for performing web-browser related work
-8. [os](https://docs.python.org/3/library/os.html) :- Library for performing OS related task
-9. [smtplib](https://docs.python.org/3/library/smtplib.html) :- Library for SMTP client session
+## 🚀 Getting Started
+
+### 1. **Clone the repository**
+
+>git clone https://github.com/dicusa/AI-assistant.git
+>cd AI-assistant
+
+### 2. **Install dependencies**
+
+>pip install -r requirements.txt
+
+### 3. **Configure API keys and paths**
+
+- Edit `config.py` with your:
+  - OpenAI API key (for GPT)
+  - NewsAPI key (for news)
+  - Email credentials (for sending emails)
+  - Application paths (Chrome, Android Studio, etc.)
+
+### 4. **Run the assistant**
+
+>python main.py
+
+
+---
+
+## 🗣️ Example Voice Commands
+
+- **“Anna, who is Ada Lovelace?”**
+- **“Anna, open Chrome”**
+- **“Anna, launch github”**
+- **“Anna, what’s the weather in New York?”**
+- **“Anna, news about technology”**
+- **“Anna, send email to alice@example.com subject Meeting body Let’s meet at 3 PM”**
+- **“Anna, remind me to check the oven in 10 minutes”**
+- **“Anna, what is zero divided by zero?”**
+- **“Anna, what time is it?”**
+- **“Anna, beatbox”**
+- **“Anna, spell encyclopedia”**
+
+---
+
+## 🧠 How It Works
+
+- **Speech Recognition**: Listens for the wake word and user commands.
+- **Text-to-Speech**: Replies in a natural voice.
+- **Natural Language Understanding**: Uses GPT for open-ended queries.
+- **Task Modules**: Each feature (weather, news, reminders, etc.) is a separate, pluggable module.
+- **Command Parsing**: Extracts intent and entities from your speech using regex and NLU.
+
+---
+
+## 🛠️ Extending Anna
+
+- **Add new skills**: Drop a new Python file in `assistant/plugins/` and register it in `commands.py`.
+- **Change the wake word**: Edit `wakeword.py`.
+- **Customize responses**: Edit `config.py` or add more to the NLU/GPT module.
+
+---
+
+## 📝 Requirements
+
+- Python 3.8+
+- See `requirements.txt` for all pip dependencies.
+
+---
+
+## 🔒 Security
+
+- **Never share your API keys or email credentials publicly.**
+- Use environment variables or a `.env` file for sensitive information.
+
+---
+
+## 🧑‍💻 Credits
+
+- Developed by Yash Jain (original concept by Mr. Yash, modernized for 2025)
+- Uses [OpenAI](https://openai.com/), [NewsAPI](https://newsapi.org/), [Wikipedia](https://pypi.org/project/wikipedia/), [python-weather](https://pypi.org/project/python-weather/), and more.
+
+---
+
+**Anna is your friendly, extensible, and modern AI assistant for 2025 and beyond!**  
+*Feel free to fork, extend, and make her your own.*
