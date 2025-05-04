@@ -1,6 +1,6 @@
 pyttsx3
 sounddevice 
-playsound 
+simpleaudio
 SpeechRecognition
 playsound
 wikipedia
