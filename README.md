@@ -22,7 +22,7 @@ Anna is a modular, voice-activated AI assistant for your computer. Triggered by 
 ---
 
 ## 🏗️ Project Structure
-
+```
 AI-assistant/
 │
 ├── main.py
@@ -45,7 +45,7 @@ AI-assistant/
 │        └── reminders.py
 └── assets/
     └── beatbox.wav
-
+```
 
 ---
 
