@@ -10,6 +10,7 @@ def wait_for_wake_word(wake_word="anna"):
             audio = r.listen(source)
             try:
                 text = r.recognize_google(audio, language='en-IN').lower()
+                print(text)
                 if wake_word in text:
                     print("Wake word detected!")
                     return

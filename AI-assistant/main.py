@@ -4,6 +4,7 @@ from assistant.speech import SpeechEngine
 from assistant.wakeword import wait_for_wake_word
 from assistant.commands import handle_query
 from assistant.utils import get_greeting
+from assistant.plugins import reminders
 
 def main():
     speech_engine = SpeechEngine()
@@ -17,7 +18,7 @@ def main():
         while True:
             query = speech_engine.listen("Listening for your command...")
             if handle_query(query, speech_engine):
-                break
+                continue
             speech_engine.speak("Do you need anything else? Say yes to continue or no to quit.")
             if speech_engine.listen().lower() == "no":
                 speech_engine.speak("Glad I could help you. Goodbye!")

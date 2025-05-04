@@ -1,7 +1,7 @@
 import schedule
 import time
 import threading
-from .speech import SpeechEngine
+from ..speech import SpeechEngine
 
 speech_engine = SpeechEngine()
 

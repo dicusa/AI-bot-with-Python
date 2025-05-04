@@ -5,7 +5,9 @@ CHROME_PATH = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 ANDROID_STUDIO_PATH = r"C:\Program Files\Android\Android Studio\bin\studio64.exe"
 
 OPENAI_API_KEY = "your-openai-api-key"  # For NLU module
-
+NEWS_API_KEY = "your-news-api-key"
+EMAIL_ADDRESS=""
+EMAIL_PASSWORD=""
 PREDEFINED_QUERIES = {
     "who are you": "I am Anna, an artificial bot developed to assist humans.",
     "where are you": "I stay at my parent machine.",
