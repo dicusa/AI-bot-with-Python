@@ -52,14 +52,14 @@ AI-assistant/
 ## 🚀 Getting Started
 
 ### 1. **Clone the repository**
-
->git clone https://github.com/dicusa/AI-assistant.git
->cd AI-assistant
-
+```
+git clone https://github.com/dicusa/AI-assistant.git
+cd AI-assistant
+```
 ### 2. **Install dependencies**
-
->pip install -r requirements.txt
-
+```
+pip install -r requirements.txt
+```
 ### 3. **Configure API keys and paths**
 
 - Edit `config.py` with your:
@@ -69,9 +69,9 @@ AI-assistant/
   - Application paths (Chrome, Android Studio, etc.)
 
 ### 4. **Run the assistant**
-
->python main.py
-
+```
+python main.py
+```
 
 ---
 
