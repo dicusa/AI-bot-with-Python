@@ -1,9 +1,9 @@
 # main.py
 
-from .speech import SpeechEngine
-from .wakeword import wait_for_wake_word
-from .commands import handle_query
-from .utils import get_greeting
+from assistant.speech import SpeechEngine
+from assistant.wakeword import wait_for_wake_word
+from assistant.commands import handle_query
+from assistant.utils import get_greeting
 
 def main():
     speech_engine = SpeechEngine()

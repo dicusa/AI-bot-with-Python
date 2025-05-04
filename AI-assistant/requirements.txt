@@ -2,7 +2,6 @@ pyttsx3
 sounddevice 
 simpleaudio
 SpeechRecognition
-playsound
 wikipedia
 python-weather
 newsapi-python
