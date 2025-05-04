@@ -29,22 +29,22 @@ AI-assistant/
 ├── config.py
 ├── requirements.txt
 ├── assistant/
-│ ├── init.py
-│ ├── speech.py
-│ ├── wakeword.py
-│ ├── nlu.py
-│ ├── commands.py
-│ ├── utils.py
-│ ├── parsers.py
-│ ├── web.py
-│ └── plugins/
-│ ├── init.py
-│ ├── weather.py
-│ ├── news.py
-│ ├── emailer.py
-│ └── reminders.py
+│   ├── __init__.py
+│   ├── speech.py
+│   ├── wakeword.py
+│   ├── nlu.py
+│   ├── commands.py
+│   ├── utils.py
+│   ├── parsers.py
+│   ├── web.py
+│   └── plugins/
+│        ├── __init__.py
+│        ├── weather.py
+│        ├── news.py
+│        ├── emailer.py
+│        └── reminders.py
 └── assets/
-└── beatbox.wav
+    └── beatbox.wav
 
 
 ---
