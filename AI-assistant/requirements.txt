@@ -1,6 +1,7 @@
 pyttsx3
+sounddevice 
+playsound 
 SpeechRecognition
-pyaudio
 playsound
 wikipedia
 python-weather
