@@ -23,28 +23,7 @@ Anna is a modular, voice-activated AI assistant for your computer. Triggered by 
 
 ## 🏗️ Project Structure
 
-AI-assistant/
-│
-├── main.py
-├── config.py
-├── requirements.txt
-├── assistant/
-│   ├── __init__.py
-│   ├── speech.py
-│   ├── wakeword.py
-│   ├── nlu.py
-│   ├── commands.py
-│   ├── utils.py
-│   ├── parsers.py
-│   ├── web.py
-│   └── plugins/
-│        ├── __init__.py
-│        ├── weather.py
-│        ├── news.py
-│        ├── emailer.py
-│        └── reminders.py
-└── assets/
-    └── beatbox.wav
+<pre> ```plaintext AI-assistant/ │ ├── main.py ├── config.py ├── requirements.txt ├── assistant/ │ ├── __init__.py │ ├── speech.py │ ├── wakeword.py │ ├── nlu.py │ ├── commands.py │ ├── utils.py │ ├── parsers.py │ ├── web.py │ └── plugins/ │ ├── __init__.py │ ├── weather.py │ ├── news.py │ ├── emailer.py │ └── reminders.py └── assets/ └── beatbox.wav ``` </pre>
 
 
 ---
