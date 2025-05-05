@@ -10,11 +10,10 @@ def main():
     speech_engine = SpeechEngine()
     reminders.start_scheduler_thread()
     speech_engine.speak(get_greeting())
-    speech_engine.speak("I am Anna, your AI assistant. How may I help you?")
+    speech_engine.speak("I am zara, your AI assistant. How may I help you?")
 
     while True:
-        wait_for_wake_word("anna")
-        speech_engine.speak("Yes, how can I help you?")
+        wait_for_wake_word("zara")
         while True:
             query = speech_engine.listen("Listening for your command...")
             if handle_query(query, speech_engine):

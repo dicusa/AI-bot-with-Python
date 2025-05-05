@@ -87,10 +87,10 @@ def handle_query(query, speech_engine):
     else:
         # Use ChatGPT for unknown queries or general conversation
         if query not in PREDEFINED_QUERIES:
-            try:
-                response = ask_chatgpt(query)
+            success, response = ask_chatgpt(query)
+            if success:
                 speech_engine.speak(response)
-            except:
+            else:
                 speech_engine.speak("Google search initiated.")
                 speech_engine.speak(google_search(query))
         return True    
