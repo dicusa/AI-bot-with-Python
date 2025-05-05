@@ -13,7 +13,7 @@ from .plugins import weather, news, emailer, reminders
 from .nlu import ask_chatgpt
 
 def handle_query(query, speech_engine):
-    
+    print(query)
     if query in PREDEFINED_QUERIES:
         speech_engine.speak(PREDEFINED_QUERIES[query])
         return True
